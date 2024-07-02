@@ -17,7 +17,8 @@ let resetButton = document.getElementById("reset-button");
 let chances = 3
 let gameOver = false
 let chanceArea = document.getElementById("chance-area");
-let history = []
+let history = [];
+
 //let resultSum = document.getElementById("result-summary");
 
 
@@ -76,5 +77,6 @@ chances = 3;
 chanceArea.innerHTML = `남은 기회 : ${chances}번`;
 gameOver = false;
 playButton.disabled = false;
+history = [];
 }
 pickRandomNum()
